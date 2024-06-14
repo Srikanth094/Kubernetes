@@ -5,11 +5,11 @@ pipeline {
         stage('Deploy to Minikube') {
             environment {
                 // Set kubeconfig file path
-                KUBECONFIG = '/c/Users/Admin/.kube'
+                KUBECONFIG = 'C:\\Users\\Admin\\.kube'
             }
             steps {
                     // Run kubectl command
-                    sh 'kubectl create deployment busybox --image=busybox'
+                    sh 'C:\\Program Files\\Docker\\Docker\\resources\\bin\\kubectl.exe create deployment busybox --image=busybox'
             }
         }
 
