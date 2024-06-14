@@ -9,7 +9,7 @@ pipeline {
             }
             steps {
                     // Run kubectl command
-                    sh '/c/Program Files/Docker/Docker/resources/bin/kubectl create deployment busybox --image=busybox'
+                    sh 'C:\Program Files\Docker\Docker\resources\bin/kubectl create deployment busybox --image=busybox'
             }
         }
 
